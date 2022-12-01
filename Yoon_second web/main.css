@@ -1,0 +1,416 @@
+body{
+   
+    font-family:'Quicksand', sans-serif;
+    font-size: 20px,
+    line-height:8px;
+    margin:0px;
+    padding:0px;
+    background-color:#ece6e3;
+}
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -70px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0; 
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+
+#Home {
+  top: 20px;
+  background-color:#0278a8;
+}
+
+#About {
+  top: 80px;
+  background-color:lightskyblue;
+}
+
+#Types{
+  top: 140px;
+  background-color:#429cca;
+}
+
+#Facts{
+  top: 200px;
+  background-color:skyblue;
+}
+ 
+.content {
+  position:fixed;
+  bottom:0;
+  background: rgba(135,206,235,0.3);
+  color:sk;
+  width: 100%;
+	font-size: 20px;
+	padding-left: 40px;
+ 
+}
+.navbar {
+ font-size: 20px;
+  background-color: #e5c7be;
+  overflow: hidden;
+  position: fixed;
+ display: flex;
+	align-content: center;
+  bottom: 0;
+  width: 100%;
+ padding-left: 450px;
+}
+
+.navbar a {
+  padding: 400x;
+ margin-left: 40px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar a:hover {
+  background-color:lightblue;
+  color:navy;
+}
+
+
+.navbar a.active {
+  background-color: #8eb7c6;
+  color: white;
+}
+
+.background-img{
+	background-image:url(Images-web2/Featherbutterfly.avif);
+	background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+	background-attachment: fixed;
+padding: 600px;
+
+}
+.img-slider img{
+	width:150px;
+	animation: butterfly 7s linear infinite; 
+	}
+.img-slider{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom:-70px;
+}
+@keyframes butterfly{
+	0%{
+		transform: translateY(0)
+			opacity:0;}
+	50%{
+			opacity:1;}
+	
+	70%{opacity:1;}
+	100%{
+		transform: translateY(-80vh);
+			opacity:0;}
+}
+.img-slider img:nth-child(1){animation-delay: 2s;}
+.img-slider img:nth-child(2){animation-delay: 1s;}
+.img-slider img:nth-child(3){animation-delay: 3s;}
+.img-slider img:nth-child(4){animation-delay: 4s;}
+.img-sl
+ider img:nth-child(5){animation-delay: 3s;}
+.img-slider img:nth-child(6){animation-delay: 6s;}
+
+.about-image{
+width:100%;
+ background-repeat: no-repeat;
+
+	
+	
+}
+.about-box{
+	background-color:#d2edf7;
+	display: flex;
+ margin:40px;
+ border-radius: 100px;
+	background-size: cover;
+	
+}
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+ padding: 10px;
+ margin-left: 40px;
+
+ display: inline-grid;
+}
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ border-radius:50px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+.flip-card-front{
+background-position: center; 
+ border-radius:100%;
+ width: 100px;
+
+}
+.overlay-about{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top:0;
+ left: 0;
+ opacity: 20%;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ border-radius: 40px;
+}
+
+.flip-card1-front{
+ background-image: url(Images-web2/butterfly-line2.png);
+  width: 100%;
+ background-size: contain;
+  color: blue;
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ border-radius: 100%
+}
+.flip-card2-front{
+ background-image: url(Images-web2/butterfly-lines3.png);
+  width: 100%;
+ background-size: contain;
+  color: blue;
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ border-radius: 100%
+ }
+
+.flip-card3-front{
+ background-image: url(Images-web2/butterfly-lines.png);
+  width: 100%;
+ background-size: contain;
+  color: blue;
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ border-radius: 100%
+}
+
+.flip-card-back {
+  background-color: #d2edf7;
+  color: #903f1f;
+  transform: rotateY(180deg);
+}
+.lines{
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+
+}
+ p{
+    text-align:justify;
+  font-style: light;
+  line-height: 30px;
+    margin-left: 100px;
+    margin-right:0; 
+    padding-bottom:100px;
+    padding-left: 10px;
+    padding-right:100px; 
+	color:#903f1f;
+
+}
+p1{
+ text-align:left;
+ padding-right: 40px;
+ line-height: 20px;
+ font-size: 20px;
+ padding-right: 40px;;
+ color:  #903f1f;
+
+
+}
+h1{
+	color:steelblue;
+}
+h2{ 
+	padding-top: 30px;
+    text-align:center;
+    font-size: 43px;
+	color: #05a7c1;
+}
+h3{
+ padding-top: 20px;
+ margin: 10px;
+ text-align: justify,center;
+ line-height: 30px;
+	color: #903f1f;
+}
+h4{
+ padding-top: 20px;
+ font-size: 30px;
+    text-align:center;
+ color: navy;
+}
+.Type-img{
+ background-size: cover;
+ background-repeat: no-repeat; 
+}
+.flexContainer2{
+	display: flex;
+	flex-wrap: wrap;
+  background-size:contain;
+ padding-top: 100px;
+
+}
+.Types-img{
+background-repeat: no-repeat;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+}
+.flexthing{
+	width: 33%;
+ white-space: pre-line;
+ border-radius: 100%;
+ 
+}
+.butterflies{
+	position: relative;
+	background-color:transparent;
+}
+.butterflies img{
+ background-color:#8fb7c5;
+	width: 80%;
+ border-radius: 100%;
+ margin-left: 50px;
+
+ 
+}
+.butterflies h3{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50%;
+	text-align: center;
+	opacity: 0;
+	
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:#e5c7be;
+	opacity: 0;
+ border-radius: 100%
+	
+}
+.butterflies:hover .overlay{
+	opacity: 1;
+}
+.butterflies:hover .butterflyName{
+	opacity: 1;
+}
+.Button{
+ text-decoration: none;
+ justify-content: space-around;
+ color: skyblue;
+ display:inline-block;
+ text-align: center;
+ font font-size: 10px;
+ margin-left: 150px;
+ border-radius:40%;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-bottom: 20px;
+ background-image: url(Images-web2/Featherbutterfly.avif);
+}
+.button:hover{
+}
+.fact-2{
+ margin-top: 40px;
+ margin-left: 600px;
+ padding-bottom: 60px;
+ padding-top: 70px;
+ justify-content: space-around;
+ width: 40%;
+ align-content:  center;
+ background-color:lightcyan;
+ border-radius: 100%;
+
+}
+ 
+.fact-2 img{
+ margin-top: -400px;
+}
+.fact-1{
+ margin-top: 40px;
+ padding-top: 60px;
+ padding-bottom: 40px;
+ justify-content: space-around;
+ width: 40%;
+ margin-left: 200px;
+ align-content:  center;
+ background-color:lightcyan;
+ display: inline-block;
+ border-radius: 100%;
+ 
+}
+.fact-1 img{
+ margin-top: -300px;
+}
+.butterfly-1{
+ margin-left: 100px;
+ margin-right: 100px;
+ padding-top: 50px;
+ padding-left: 20px;
+ display: inline-block;
+ background-color:#d2edf7;
+ border-radius: 100px;
+	
+}
+.butterfly-1 img{
+ position:absolute;
+ width: 300px;
+ border-radius: 50%
+}
+.butterfly-1 .button{
+ margin-left: -300px;
+}
